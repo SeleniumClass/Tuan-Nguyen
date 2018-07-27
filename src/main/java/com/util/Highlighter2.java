@@ -15,11 +15,11 @@ static JavascriptExecutor js;
 		return Element;
 		
 }
-	public static WebElement getDrawBlueColor(WebDriver driver, WebElement Element ){
+	public static WebElement getDrawBlueColor(WebDriver driver, WebElement a ){
 		js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].style.border='3px solid blue'", Element);
+		js.executeScript("arguments[0].style.border='3px solid blue'", a);
 		
-		return Element;
+		return a;
 		
 
 }

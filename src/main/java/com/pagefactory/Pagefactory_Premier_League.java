@@ -27,7 +27,9 @@ public class Pagefactory_Premier_League {
 	//@CacheLookup using cache memory to run the annotation @ faster
 	private WebElement cookie;
 	
-	
+	@FindBy(how = How.XPATH, using = "(//*[contains(text(),'Chelsea')])[3]")
+	//@CacheLookup using cache memory to run the annotation @ faster
+	private WebElement chelsea;
 
 	public List<WebElement> getclub() {
 		return club;
@@ -39,6 +41,8 @@ public class Pagefactory_Premier_League {
 		return cookie;
 
 }
-
+	public WebElement getchelsea() {
+		return chelsea;
+	}
 }
 
